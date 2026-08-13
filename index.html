@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pashu — Premium Pet Care · Boarding, Food & Walking</title>
+<meta name="description" content="Pashu Premium Pet Care — boutique pet boarding, vet-formulated fresh food and GPS-tracked walks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Paw trail signature element -->
+<div class="paw-trail" id="pawTrail" aria-hidden="true"></div>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand">
+      <span class="nav__mark">पशु</span>
+      <span class="nav__word">Pashu<em>.</em></span>
+    </a>
+    <nav class="nav__links">
+      <a href="#food">Food</a>
+      <a href="#boarding">Boarding</a>
+      <a href="#walking">Walking</a>
+      <a href="#benefits">Why Pashu</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+    <a href="#book" class="btn btn--nav">Book a stay</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__blob" aria-hidden="true"></div>
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Boutique pet care · Est. Pune</p>
+        <h1 class="hero__title">
+          Every tail<br>
+          deserves a <em>little</em><br>
+          more wag.
+        </h1>
+        <p class="hero__lede">
+          Pashu is boarding, fresh food and walks built around one animal at a time —
+          not a kennel number. Vet-formulated meals, live-camera suites and
+          GPS-tracked walkers who actually know your pet's name.
+        </p>
+        <div class="hero__cta">
+          <a href="#book" class="btn btn--primary">Reserve a spot</a>
+          <a href="#services" class="btn btn--ghost">See what we do ↓</a>
+        </div>
+        <div class="hero__trust">
+          <div class="trust__item"><span class="trust__num">1,240+</span><span class="trust__label">pets hosted</span></div>
+          <div class="trust__item"><span class="trust__num">4.9★</span><span class="trust__label">avg. rating</span></div>
+          <div class="trust__item"><span class="trust__num">24/7</span><span class="trust__label">live monitoring</span></div>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img class="hero__img hero__img--1" src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=80" alt="Golden retriever relaxing, one of Pashu's boarding guests">
+        <img class="hero__img hero__img--2" src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=700&q=80" alt="Cat resting comfortably at a Pashu suite">
+        <div class="hero__card">
+          <span class="hero__card-dot"></span>
+          <div>
+            <p class="hero__card-title">Bruno · Suite 4</p>
+            <p class="hero__card-sub">Napping · walked 8:12am</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Fresh food</span><span>·</span><span>Cozy boarding</span><span>·</span><span>Daily walks</span><span>·</span>
+        <span>Vet supervised</span><span>·</span><span>Live camera</span><span>·</span>
+        <span>Fresh food</span><span>·</span><span>Cozy boarding</span><span>·</span><span>Daily walks</span><span>·</span>
+        <span>Vet supervised</span><span>·</span><span>Live camera</span><span>·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="section-head reveal">
+      <p class="eyebrow">What we do</p>
+      <h2>Three services. One promise —<br>your pet is never "just a client."</h2>
+    </div>
+
+    <div class="service service--food" id="food">
+      <div class="service__media reveal">
+        <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=1000&q=80" alt="Fresh pet food ingredients being prepared">
+        <span class="service__tag">01 · Pet Food</span>
+      </div>
+      <div class="service__copy reveal">
+        <h3>Nutrition your pet actually asks for</h3>
+        <p>Every recipe is designed with our in-house vet nutritionist and cooked in
+          small batches — no fillers, no mystery meat. You tell us your pet's breed,
+          age and allergies; we build the plan and deliver it fresh on a schedule
+          that fits your kitchen, not a factory line.</p>
+        <ul class="service__list">
+          <li>Vet-formulated, breed &amp; age specific recipes</li>
+          <li>Human-grade ingredients, cooked fresh weekly</li>
+          <li>Subscription or one-off boxes, pause anytime</li>
+        </ul>
+        <a href="#book" class="btn btn--dark">Build a meal plan</a>
+      </div>
+    </div>
+
+    <div class="service service--boarding service--reverse" id="boarding">
+      <div class="service__media reveal">
+        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=1000&q=80" alt="Cozy pet boarding suite with a resting dog">
+        <span class="service__tag">02 · Pet Boarding</span>
+      </div>
+      <div class="service__copy reveal">
+        <h3>A second home — not a cage</h3>
+        <p>Private suites, soft bedding and a play yard that sees more running than
+          resting. Every guest gets a keeper assigned for the length of their stay,
+          and you get a live feed so "how's he doing?" has an answer any hour of
+          the night.</p>
+        <ul class="service__list">
+          <li>Private suites with 24/7 live camera access</li>
+          <li>1 dedicated keeper per stay, not a rotating shift</li>
+          <li>On-call vet within 10 minutes, always</li>
+        </ul>
+        <a href="#book" class="btn btn--dark">Reserve a suite</a>
+      </div>
+    </div>
+
+    <div class="service service--walking" id="walking">
+      <div class="service__media reveal">
+        <img src="https://images.unsplash.com/photo-1594149929911-78975a43d4f5?auto=format&fit=crop&w=1000&q=80" alt="Dog walker on a trail with a happy dog">
+        <span class="service__tag">03 · Pet Walking</span>
+      </div>
+      <div class="service__copy reveal">
+        <h3>Every walk, an actual adventure</h3>
+        <p>Trained, background-checked handlers who learn your pet's pace, favorite
+          routes and quirks. Every walk is GPS-tracked with a photo drop, so it's
+          never a guess whether the leash actually left the house.</p>
+        <ul class="service__list">
+          <li>GPS-tracked routes with live photo updates</li>
+          <li>Matched to a consistent, familiar handler</li>
+          <li>Solo or small-group pack walks available</li>
+        </ul>
+        <a href="#book" class="btn btn--dark">Schedule a walk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENEFITS ============ -->
+  <section class="benefits" id="benefits">
+    <div class="section-head section-head--light reveal">
+      <p class="eyebrow eyebrow--light">Why Pashu</p>
+      <h2>Built like it's our<br>own pet staying there.</h2>
+    </div>
+    <div class="benefits__grid">
+      <div class="benefit reveal">
+        <span class="benefit__icon">🩺</span>
+        <h4>Vet-supervised, always</h4>
+        <p>A licensed vet reviews every boarding and feeding plan — not just on request.</p>
+      </div>
+      <div class="benefit reveal">
+        <span class="benefit__icon">📹</span>
+        <h4>Live camera access</h4>
+        <p>Check in on your pet's suite anytime from your phone, day or night.</p>
+      </div>
+      <div class="benefit reveal">
+        <span class="benefit__icon">📍</span>
+        <h4>GPS-tracked walks</h4>
+        <p>See the exact route, pace and duration of every single walk, in real time.</p>
+      </div>
+      <div class="benefit reveal">
+        <span class="benefit__icon">🥘</span>
+        <h4>Fresh, not frozen</h4>
+        <p>Meals are cooked in small batches weekly — never mass-produced kibble.</p>
+      </div>
+      <div class="benefit reveal">
+        <span class="benefit__icon">🧑‍🤝‍🧑</span>
+        <h4>Verified, trained staff</h4>
+        <p>Every keeper and walker is background-checked and animal-handling certified.</p>
+      </div>
+      <div class="benefit reveal">
+        <span class="benefit__icon">☎️</span>
+        <h4>24/7 human support</h4>
+        <p>A real person answers — not a bot — whenever you need an update.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <div class="section-head reveal">
+      <p class="eyebrow">Life at Pashu</p>
+      <h2>A day in the pack.</h2>
+    </div>
+    <div class="gallery__grid">
+      <figure class="gallery__item reveal">
+        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80" alt="Dog running joyfully outdoors">
+        <figcaption>Morning zoomies, Suite Yard B</figcaption>
+      </figure>
+      <figure class="gallery__item reveal">
+        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80" alt="Vet examining a pet gently">
+        <figcaption>Weekly wellness check</figcaption>
+      </figure>
+      <figure class="gallery__item reveal">
+        <img src="https://images.unsplash.com/photo-1601979031925-424e53b6caaa?auto=format&fit=crop&w=800&q=80" alt="Cat lounging in a sunny window">
+        <figcaption>Afternoon sunbathing, Suite 9</figcaption>
+      </figure>
+      <figure class="gallery__item reveal">
+        <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&w=800&q=80" alt="Dog on a leash walk through a park">
+        <figcaption>Evening pack walk, riverside route</figcaption>
+      </figure>
+      <figure class="gallery__item reveal">
+        <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=800&q=80" alt="Puppy eating from a bowl">
+        <figcaption>Dinner service, 6:30pm</figcaption>
+      </figure>
+      <figure class="gallery__item reveal">
+        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80" alt="Dog sleeping peacefully on a soft bed">
+        <figcaption>Lights out, all suites quiet</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials">
+    <div class="testimonial-track reveal">
+      <p class="eyebrow">Pet parents say</p>
+      <div class="testimonial" id="testimonial">
+        <p class="testimonial__quote">“The live camera is what sold me, but the fact that the same
+          keeper stayed with Momo the whole week is why I'm never boarding anywhere else.”</p>
+        <p class="testimonial__author">— Aditi R., boarded a Labrador for 6 nights</p>
+      </div>
+      <div class="testimonial__dots" id="testimonialDots"></div>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING ============ -->
+  <section class="booking" id="book">
+    <div class="booking__inner">
+      <div class="booking__copy reveal">
+        <p class="eyebrow eyebrow--light">Reserve now</p>
+        <h2>Tell us about your pet.<br>We'll do the rest.</h2>
+        <p class="booking__note">This is a request form — our team confirms availability
+          and follows up within a few hours. No payment is taken here.</p>
+      </div>
+      <form class="booking__form reveal" id="bookingForm">
+        <div class="field-row">
+          <label class="field">
+            <span>Pet's name</span>
+            <input type="text" name="petName" placeholder="e.g. Bruno" required>
+          </label>
+          <label class="field">
+            <span>Species</span>
+            <select name="species" required>
+              <option value="">Select</option>
+              <option>Dog</option>
+              <option>Cat</option>
+              <option>Other</option>
+            </select>
+          </label>
+        </div>
+
+        <fieldset class="field field--service">
+          <legend>Service needed</legend>
+          <div class="service-picker">
+            <label><input type="radio" name="service" value="Boarding" checked><span>🏠 Boarding</span></label>
+            <label><input type="radio" name="service" value="Food"><span>🥘 Food plan</span></label>
+            <label><input type="radio" name="service" value="Walking"><span>🐾 Walking</span></label>
+          </div>
+        </fieldset>
+
+        <div class="field-row">
+          <label class="field">
+            <span>Start date</span>
+            <input type="date" name="startDate" required>
+          </label>
+          <label class="field">
+            <span>Your phone</span>
+            <input type="tel" name="phone" placeholder="+91 " required>
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Anything we should know?</span>
+          <textarea name="notes" rows="3" placeholder="Allergies, temperament, favorite toy..."></textarea>
+        </label>
+
+        <button type="submit" class="btn btn--primary btn--full">Send reservation request</button>
+        <p class="booking__status" id="bookingStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="nav__word">Pashu<em>.</em></span>
+      <p>Premium pet care — boarding, food and walking, one animal at a time.</p>
+    </div>
+    <div class="footer__col">
+      <h5>Services</h5>
+      <a href="#food">Pet food</a>
+      <a href="#boarding">Boarding</a>
+      <a href="#walking">Walking</a>
+    </div>
+    <div class="footer__col">
+      <h5>Studio</h5>
+      <a href="#gallery">Gallery</a>
+      <a href="#benefits">Why Pashu</a>
+      <a href="#book">Book now</a>
+    </div>
+    <div class="footer__col">
+      <h5>Reach us</h5>
+      <a href="tel:+911234567890">+91 12345 67890</a>
+      <a href="mailto:hello@pashupets.com">hello@pashupets.com</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year"></span> Pashu Premium Pet Care</span>
+    <span>Made with 🐾 for every good boy and good girl</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
