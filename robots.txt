@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# No admin or private paths to crawl
+Disallow: /api/
+
+Sitemap: https://pashupets.com/sitemap.xml

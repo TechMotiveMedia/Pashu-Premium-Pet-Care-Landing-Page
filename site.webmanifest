@@ -1,0 +1,18 @@
+{
+  "name": "Pashu Premium Pet Care",
+  "short_name": "Pashu",
+  "description": "Premium pet boarding, fresh food, GPS-tracked walks and a 24/7 animal rescue & adoption service in Pune.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF3E4",
+  "theme_color": "#16302A",
+  "lang": "en-IN",
+  "categories": ["pets", "lifestyle"],
+  "icons": [
+    { "src": "/assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/assets/img/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/assets/img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

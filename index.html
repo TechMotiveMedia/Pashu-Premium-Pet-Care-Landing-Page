@@ -1,47 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pashu — Premium Pet Care · Boarding, Food & Walking</title>
-<meta name="description" content="Pashu Premium Pet Care — boutique pet boarding, vet-formulated fresh food and GPS-tracked walks.">
+
+<title>Pashu — Premium Pet Boarding, Rescue & Adoption in Pune</title>
+<meta name="description" content="Pashu Premium Pet Care — boutique pet boarding, vet-formulated fresh food, GPS-tracked walks, and a 24/7 animal rescue &amp; adoption service in Pune. 340 animals rescued since 2019.">
+<link rel="canonical" href="https://pashupets.com/">
+<meta name="theme-color" content="#16302A" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F241E" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pashu Premium Pet Care">
+<meta property="og:url" content="https://pashupets.com/">
+<meta property="og:title" content="Pashu — Premium Pet Boarding &amp; Animal Rescue, Pune">
+<meta property="og:description" content="Boutique boarding, vet-formulated fresh food, GPS-tracked walks — plus a 24/7 rescue and adoption desk. One animal at a time.">
+<meta property="og:image" content="assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pashu — Premium Pet Boarding &amp; Animal Rescue, Pune">
+<meta name="twitter:description" content="Boutique boarding, vet-formulated fresh food, GPS-tracked walks — plus a 24/7 rescue and adoption desk.">
+<meta name="twitter:image" content="assets/img/og-image.png">
+
+<!-- Icons -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&amp;family=Work+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+
 <link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className=document.documentElement.className.replace(/\bno-js\b/,'js')</script>
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
+
 <!-- Paw trail signature element -->
 <div class="paw-trail" id="pawTrail" aria-hidden="true"></div>
-
 <div class="grain" aria-hidden="true"></div>
+
+<!-- ============ EMERGENCY BAND ============ -->
+<aside class="urgent" id="urgentBand">
+  <div class="container urgent__inner">
+    <p class="urgent__text">
+      <span class="urgent__dot" aria-hidden="true"></span>
+      <strong>Found an animal in distress?</strong>
+      Our rescue desk answers 24/7.
+    </p>
+    <a class="urgent__cta" href="tel:+911234567890">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.57 3.6 1 1 0 01-.25 1z" fill="currentColor"/></svg>
+      +91 12345 67890
+    </a>
+    <button class="urgent__close" type="button" aria-label="Dismiss emergency contact banner">
+      <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</aside>
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
-  <div class="nav__inner">
-    <a href="#top" class="nav__brand">
-      <span class="nav__mark">पशु</span>
+  <div class="container nav__inner">
+    <a href="#top" class="nav__brand" data-scroll>
+      <span class="nav__mark" lang="hi">पशु</span>
       <span class="nav__word">Pashu<em>.</em></span>
     </a>
-    <nav class="nav__links">
-      <a href="#food">Food</a>
-      <a href="#boarding">Boarding</a>
-      <a href="#walking">Walking</a>
-      <a href="#benefits">Why Pashu</a>
-      <a href="#gallery">Gallery</a>
+
+    <nav class="nav__links" id="primaryNav" aria-label="Primary">
+      <div class="nav__group">
+        <button class="nav__link nav__link--parent" type="button" aria-expanded="false" aria-controls="servicesMenu">
+          Services
+          <svg class="nav__caret" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </button>
+        <div class="nav__menu" id="servicesMenu">
+          <a href="#food" data-scroll><span class="nav__menu-ico">🥘</span> Pet Food</a>
+          <a href="#boarding" data-scroll><span class="nav__menu-ico">🏠</span> Boarding</a>
+          <a href="#walking" data-scroll><span class="nav__menu-ico">🐾</span> Walking</a>
+        </div>
+      </div>
+      <a class="nav__link" href="#rescue" data-scroll>Rescue</a>
+      <a class="nav__link" href="#adopt" data-scroll>Adopt</a>
+      <a class="nav__link" href="#benefits" data-scroll>Why Pashu</a>
+      <a class="nav__link" href="#gallery" data-scroll>Gallery</a>
+      <a class="nav__link" href="#faq" data-scroll>FAQ</a>
+      <a class="nav__link" href="#contact" data-scroll>Contact</a>
     </nav>
-    <a href="#book" class="btn btn--nav">Book a stay</a>
+
+    <div class="nav__actions">
+      <button class="theme-toggle" type="button" id="themeToggle" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg class="theme-toggle__sun" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></g></svg>
+        <svg class="theme-toggle__moon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13.2A9 9 0 1110.8 3a7 7 0 0010.2 10.2z" fill="currentColor"/></svg>
+      </button>
+      <a href="#book" class="btn btn--nav" data-scroll>Book a stay</a>
+      <button class="nav__burger" type="button" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
+  <div class="nav__progress" aria-hidden="true"><i id="navProgress"></i></div>
 </header>
 
-<main id="top">
+<!-- Mobile drawer -->
+<div class="drawer" id="mobileNav" hidden>
+  <nav class="drawer__panel" aria-label="Mobile">
+    <div class="drawer__group">
+      <p class="drawer__label">Services</p>
+      <a href="#food" data-scroll>🥘 Pet Food</a>
+      <a href="#boarding" data-scroll>🏠 Boarding</a>
+      <a href="#walking" data-scroll>🐾 Walking</a>
+    </div>
+    <div class="drawer__group">
+      <p class="drawer__label">Rescue</p>
+      <a href="#rescue" data-scroll>24/7 Rescue Desk</a>
+      <a href="#adopt" data-scroll>Adoptable Animals</a>
+      <a href="#intake" data-scroll>How Intake Works</a>
+      <a href="#support" data-scroll>Donate &amp; Volunteer</a>
+    </div>
+    <div class="drawer__group">
+      <p class="drawer__label">Studio</p>
+      <a href="#benefits" data-scroll>Why Pashu</a>
+      <a href="#gallery" data-scroll>Gallery</a>
+      <a href="#faq" data-scroll>FAQ</a>
+      <a href="#contact" data-scroll>Contact</a>
+    </div>
+    <div class="drawer__foot">
+      <a href="#book" class="btn btn--primary btn--full" data-scroll>Book a stay</a>
+      <a href="tel:+911234567890" class="drawer__tel">+91 12345 67890</a>
+    </div>
+  </nav>
+  <div class="drawer__scrim" data-drawer-close></div>
+</div>
+
+<main id="main">
+<span id="top"></span>
 
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="hero__blob" aria-hidden="true"></div>
-    <div class="hero__grid">
+    <div class="container hero__grid">
       <div class="hero__copy">
-        <p class="eyebrow">Boutique pet care · Est. Pune</p>
+        <p class="eyebrow">Boutique pet care · Est. Pune 2019</p>
         <h1 class="hero__title">
           Every tail<br>
           deserves a <em>little</em><br>
@@ -53,29 +159,31 @@
           GPS-tracked walkers who actually know your pet's name.
         </p>
         <div class="hero__cta">
-          <a href="#book" class="btn btn--primary">Reserve a spot</a>
-          <a href="#services" class="btn btn--ghost">See what we do ↓</a>
+          <a href="#book" class="btn btn--primary" data-scroll>Reserve a spot</a>
+          <a href="#rescue" class="btn btn--ghost" data-scroll>Rescue &amp; adoption ↓</a>
         </div>
-        <div class="hero__trust">
-          <div class="trust__item"><span class="trust__num">1,240+</span><span class="trust__label">pets hosted</span></div>
-          <div class="trust__item"><span class="trust__num">4.9★</span><span class="trust__label">avg. rating</span></div>
-          <div class="trust__item"><span class="trust__num">24/7</span><span class="trust__label">live monitoring</span></div>
+        <div class="hero__trust" id="heroTrust">
+          <div class="trust__item"><span class="trust__num" data-count="1240" data-suffix="+">1,240+</span><span class="trust__label">pets hosted</span></div>
+          <div class="trust__item"><span class="trust__num" data-count="340" data-prefix="" data-suffix="">340</span><span class="trust__label">animals rescued</span></div>
+          <div class="trust__item"><span class="trust__num" data-count="24" data-suffix="/7">24/7</span><span class="trust__label">live monitoring</span></div>
         </div>
       </div>
       <div class="hero__media">
-        <img class="hero__img hero__img--1" src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=80" alt="Golden retriever relaxing, one of Pashu's boarding guests">
-        <img class="hero__img hero__img--2" src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=700&q=80" alt="Cat resting comfortably at a Pashu suite">
-        <div class="hero__card">
-          <span class="hero__card-dot"></span>
-          <div>
-            <p class="hero__card-title">Bruno · Suite 4</p>
-            <p class="hero__card-sub">Napping · walked 8:12am</p>
+        <img class="hero__img hero__img--1" src="assets/img/hero-dog.jpg" width="900" height="900" fetchpriority="high" decoding="async" alt="Golden retriever relaxing on a boarding suite floor">
+        <img class="hero__img hero__img--2" src="assets/img/hero-cat.jpg" width="700" height="700" loading="lazy" decoding="async" alt="Cat resting comfortably in a Pashu suite">
+        <div class="hero__card-anchor">
+          <div class="hero__card">
+            <span class="hero__card-dot" aria-hidden="true"></span>
+            <div>
+              <p class="hero__card-title">Bruno · Suite 4</p>
+              <p class="hero__card-sub">Napping · walked 8:12am</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="hero__marquee" aria-hidden="true">
-      <div class="marquee__track">
+      <div class="marquee__track" id="marqueeTrack">
         <span>Fresh food</span><span>·</span><span>Cozy boarding</span><span>·</span><span>Daily walks</span><span>·</span>
         <span>Vet supervised</span><span>·</span><span>Live camera</span><span>·</span>
         <span>Fresh food</span><span>·</span><span>Cozy boarding</span><span>·</span><span>Daily walks</span><span>·</span>
@@ -85,213 +193,606 @@
   </section>
 
   <!-- ============ SERVICES ============ -->
-  <section class="services" id="services">
-    <div class="section-head reveal">
-      <p class="eyebrow">What we do</p>
-      <h2>Three services. One promise —<br>your pet is never "just a client."</h2>
-    </div>
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">What we do</p>
+        <h2>Three services. One promise —<br>your pet is never "just a client."</h2>
+      </div>
 
-    <div class="service service--food" id="food">
-      <div class="service__media reveal">
-        <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=1000&q=80" alt="Fresh pet food ingredients being prepared">
-        <span class="service__tag">01 · Pet Food</span>
-      </div>
-      <div class="service__copy reveal">
-        <h3>Nutrition your pet actually asks for</h3>
-        <p>Every recipe is designed with our in-house vet nutritionist and cooked in
-          small batches — no fillers, no mystery meat. You tell us your pet's breed,
-          age and allergies; we build the plan and deliver it fresh on a schedule
-          that fits your kitchen, not a factory line.</p>
-        <ul class="service__list">
-          <li>Vet-formulated, breed &amp; age specific recipes</li>
-          <li>Human-grade ingredients, cooked fresh weekly</li>
-          <li>Subscription or one-off boxes, pause anytime</li>
-        </ul>
-        <a href="#book" class="btn btn--dark">Build a meal plan</a>
-      </div>
-    </div>
+      <article class="service service--food" id="food">
+        <div class="service__media reveal">
+          <img src="assets/img/service-food.jpg" width="1000" height="800" loading="lazy" decoding="async" alt="Fresh pet food ingredients being prepared on a steel counter">
+          <span class="service__tag">01 · Pet Food</span>
+        </div>
+        <div class="service__copy reveal">
+          <h3>Nutrition your pet actually asks for</h3>
+          <p>Every recipe is designed with our in-house vet nutritionist and cooked in
+            small batches — no fillers, no mystery meat. You tell us your pet's breed,
+            age and allergies; we build the plan and deliver it fresh on a schedule
+            that fits your kitchen, not a factory line.</p>
+          <ul class="service__list">
+            <li>Vet-formulated, breed &amp; age specific recipes</li>
+            <li>Human-grade ingredients, cooked fresh weekly</li>
+            <li>Subscription or one-off boxes, pause anytime</li>
+          </ul>
+          <a href="#book" class="btn btn--dark" data-scroll>Build a meal plan</a>
+        </div>
+      </article>
 
-    <div class="service service--boarding service--reverse" id="boarding">
-      <div class="service__media reveal">
-        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=1000&q=80" alt="Cozy pet boarding suite with a resting dog">
-        <span class="service__tag">02 · Pet Boarding</span>
-      </div>
-      <div class="service__copy reveal">
-        <h3>A second home — not a cage</h3>
-        <p>Private suites, soft bedding and a play yard that sees more running than
-          resting. Every guest gets a keeper assigned for the length of their stay,
-          and you get a live feed so "how's he doing?" has an answer any hour of
-          the night.</p>
-        <ul class="service__list">
-          <li>Private suites with 24/7 live camera access</li>
-          <li>1 dedicated keeper per stay, not a rotating shift</li>
-          <li>On-call vet within 10 minutes, always</li>
-        </ul>
-        <a href="#book" class="btn btn--dark">Reserve a suite</a>
-      </div>
-    </div>
+      <article class="service service--boarding service--reverse" id="boarding">
+        <div class="service__media reveal">
+          <img src="assets/img/service-boarding.jpg" width="1000" height="800" loading="lazy" decoding="async" alt="Cozy private pet boarding suite with a resting dog">
+          <span class="service__tag">02 · Pet Boarding</span>
+        </div>
+        <div class="service__copy reveal">
+          <h3>A second home — not a cage</h3>
+          <p>Private suites, soft bedding and a play yard that sees more running than
+            resting. Every guest gets a keeper assigned for the length of their stay,
+            and you get a live feed so "how's he doing?" has an answer any hour of
+            the night.</p>
+          <ul class="service__list">
+            <li>Private suites with 24/7 live camera access</li>
+            <li>1 dedicated keeper per stay, not a rotating shift</li>
+            <li>On-call vet within 10 minutes, always</li>
+          </ul>
+          <a href="#book" class="btn btn--dark" data-scroll>Reserve a suite</a>
+        </div>
+      </article>
 
-    <div class="service service--walking" id="walking">
-      <div class="service__media reveal">
-        <img src="https://images.unsplash.com/photo-1594149929911-78975a43d4f5?auto=format&fit=crop&w=1000&q=80" alt="Dog walker on a trail with a happy dog">
-        <span class="service__tag">03 · Pet Walking</span>
+      <article class="service service--walking" id="walking">
+        <div class="service__media reveal">
+          <img src="assets/img/service-walking.jpg" width="1000" height="800" loading="lazy" decoding="async" alt="Dog walker on a forest trail with a happy dog on a lead">
+          <span class="service__tag">03 · Pet Walking</span>
+        </div>
+        <div class="service__copy reveal">
+          <h3>Every walk, an actual adventure</h3>
+          <p>Trained, background-checked handlers who learn your pet's pace, favourite
+            routes and quirks. Every walk is GPS-tracked with a photo drop, so it's
+            never a guess whether the leash actually left the house.</p>
+          <ul class="service__list">
+            <li>GPS-tracked routes with live photo updates</li>
+            <li>Matched to a consistent, familiar handler</li>
+            <li>Solo or small-group pack walks available</li>
+          </ul>
+          <a href="#book" class="btn btn--dark" data-scroll>Schedule a walk</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ BENEFITS (dark, bento) ============ -->
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <div class="section-head section-head--light reveal">
+        <p class="eyebrow eyebrow--light">Why Pashu</p>
+        <h2>Built like it's our<br>own pet staying there.</h2>
       </div>
-      <div class="service__copy reveal">
-        <h3>Every walk, an actual adventure</h3>
-        <p>Trained, background-checked handlers who learn your pet's pace, favorite
-          routes and quirks. Every walk is GPS-tracked with a photo drop, so it's
-          never a guess whether the leash actually left the house.</p>
-        <ul class="service__list">
-          <li>GPS-tracked routes with live photo updates</li>
-          <li>Matched to a consistent, familiar handler</li>
-          <li>Solo or small-group pack walks available</li>
-        </ul>
-        <a href="#book" class="btn btn--dark">Schedule a walk</a>
+      <div class="benefits__grid">
+        <article class="benefit benefit--wide reveal">
+          <span class="benefit__icon" aria-hidden="true">📹</span>
+          <h3>Vet-supervised, always</h3>
+          <p>A licensed vet reviews every boarding, feeding and foster plan — not just on request. Records live in one place, so any keeper on shift sees the full history.</p>
+        </article>
+        <article class="benefit reveal">
+          <span class="benefit__icon" aria-hidden="true">🩺</span>
+          <h3>On-call vet in 10 min</h3>
+          <p>Round-the-clock emergency cover, every single day of the year.</p>
+        </article>
+        <article class="benefit reveal">
+          <span class="benefit__icon" aria-hidden="true">📍</span>
+          <h3>GPS-tracked walks</h3>
+          <p>Exact route, pace and duration of every walk, in real time.</p>
+        </article>
+        <article class="benefit reveal">
+          <span class="benefit__icon" aria-hidden="true">🥘</span>
+          <h3>Fresh, not frozen</h3>
+          <p>Meals cooked in small batches weekly. Never mass-produced kibble.</p>
+        </article>
+        <article class="benefit benefit--tall reveal">
+          <span class="benefit__icon" aria-hidden="true">🧑‍🤝‍🧑</span>
+          <h3>Verified, trained staff</h3>
+          <p>Every keeper, walker and foster carer is background-checked and
+            certified in animal handling before they touch a leash. Annual
+            re-certification, paid for by us — never by them.</p>
+        </article>
+        <article class="benefit reveal">
+          <span class="benefit__icon" aria-hidden="true">☎️</span>
+          <h3>24/7 human support</h3>
+          <p>A real person answers. Not a bot, not a voicemail.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ============ BENEFITS ============ -->
-  <section class="benefits" id="benefits">
-    <div class="section-head section-head--light reveal">
-      <p class="eyebrow eyebrow--light">Why Pashu</p>
-      <h2>Built like it's our<br>own pet staying there.</h2>
+  <!-- ============ RESCUE ============ -->
+  <section class="section rescue" id="rescue">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--warm">Rescue desk</p>
+        <h2>Not every animal arrives<br>with a pedigree.</h2>
+        <p class="section-head__lede">
+          We run a 24-hour rescue intake alongside the boarding house. Strays,
+          surrenders and animals needing foster care get triaged by a vet, not a
+          form. Since 2019 that's <strong>340 animals</strong> through our doors —
+          and counting.
+        </p>
+      </div>
+
+      <div class="rescue__grid">
+        <article class="rescue__card reveal">
+          <span class="rescue__icon" aria-hidden="true">🚨</span>
+          <h3>Found a stray or injured animal?</h3>
+          <p>Call the desk. We will collect from anywhere in Pune at any hour, at no cost to you. Photos over WhatsApp are fastest.</p>
+          <a href="tel:+911234567890" class="btn btn--dark">Call the rescue desk</a>
+        </article>
+        <article class="rescue__card reveal">
+          <span class="rescue__icon" aria-hidden="true">🏠</span>
+          <h3>Can't keep your pet right now?</h3>
+          <p>Moving, losing a home, an unwell owner — all common, all non-judgemental. We'll take the animal into foster care the same day, no questions asked.</p>
+          <a href="#intake" class="btn btn--ghost-dark" data-scroll>How intake works</a>
+        </article>
+        <article class="rescue__card reveal">
+          <span class="rescue__icon" aria-hidden="true">🩹</span>
+          <h3>Need foster capacity?</h3>
+          <p>Two weeks in a foster home is the single biggest predictor of a successful adoption. We supply food, equipment and full veterinary cover.</p>
+          <a href="#support" class="btn btn--ghost-dark" data-scroll>Become a foster parent</a>
+        </article>
+      </div>
     </div>
-    <div class="benefits__grid">
-      <div class="benefit reveal">
-        <span class="benefit__icon">🩺</span>
-        <h4>Vet-supervised, always</h4>
-        <p>A licensed vet reviews every boarding and feeding plan — not just on request.</p>
+  </section>
+
+  <!-- ============ ADOPT ============ -->
+  <section class="adopt" id="adopt">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Looking for a friend</p>
+        <h2>Currently in our care.</h2>
       </div>
-      <div class="benefit reveal">
-        <span class="benefit__icon">📹</span>
-        <h4>Live camera access</h4>
-        <p>Check in on your pet's suite anytime from your phone, day or night.</p>
+
+      <div class="adopt__filters reveal" role="group" aria-label="Filter adoptable animals">
+        <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All <span data-role="count" data-for="all">6</span></button>
+        <button class="chip" type="button" data-filter="dog" aria-pressed="false">Dogs <span data-role="count" data-for="dog">4</span></button>
+        <button class="chip" type="button" data-filter="cat" aria-pressed="false">Cats <span data-role="count" data-for="cat">2</span></button>
+        <button class="chip" type="button" data-filter="small" aria-pressed="false">Small <span data-role="count" data-for="small">3</span></button>
+        <p class="adopt__empty" id="adoptEmpty" hidden>No animals match that filter right now. New intakes arrive most weeks — <a href="#book" data-scroll>register your interest</a> and we'll call you first.</p>
       </div>
-      <div class="benefit reveal">
-        <span class="benefit__icon">📍</span>
-        <h4>GPS-tracked walks</h4>
-        <p>See the exact route, pace and duration of every single walk, in real time.</p>
+
+      <ul class="adopt__grid" id="adoptGrid">
+        <li class="pet reveal" data-kind="dog" data-size="large" data-status="available">
+          <a class="pet__media" href="#book" data-scroll>
+            <img src="assets/img/pet-bruno.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Bruno, a two-year-old mixed-breed dog available for adoption">
+          </a>
+          <div class="pet__body">
+            <p class="pet__status pet__status--open">Available</p>
+            <h3 class="pet__name">Bruno</h3>
+            <p class="pet__meta">2 yrs · Large · Dog · 18 kg</p>
+            <p class="pet__note">Found near Hadapsar, underweight but bright. Vet cleared, neutered, microchipped.</p>
+          </div>
+        </li>
+        <li class="pet reveal" data-kind="dog" data-size="medium" data-status="foster">
+          <a class="pet__media" href="#book" data-scroll>
+            <img src="assets/img/pet-momo.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Momo, a calm one-year-old Labrador cross in a foster home">
+          </a>
+          <div class="pet__body">
+            <p class="pet__status pet__status--foster">In foster</p>
+            <h3 class="pet__name">Momo</h3>
+            <p class="pet__meta">1 yr · Medium · Dog · 12 kg</p>
+            <p class="pet__note">Surrendered by a family relocating. Gentle with children, tolerant of other dogs.</p>
+          </div>
+        </li>
+        <li class="pet reveal" data-kind="cat" data-size="small" data-status="available">
+          <a class="pet__media" href="#book" data-scroll>
+            <img src="assets/img/pet-simba.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Simba, a one-year-old tabby cat available for adoption">
+          </a>
+          <div class="pet__body">
+            <p class="pet__status pet__status--open">Available</p>
+            <h3 class="pet__name">Simba</h3>
+            <p class="pet__meta">1 yr · Small · Cat · 4 kg</p>
+            <p class="pet__note">Rescued after an accident; full recovery. Would suit a quiet home without young children.</p>
+          </div>
+        </li>
+        <li class="pet reveal" data-kind="dog" data-size="small" data-status="available">
+          <a class="pet__media" href="#book" data-scroll>
+            <img src="assets/img/pet-guddu.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Guddu, a senior terrier mix available for adoption">
+          </a>
+          <div class="pet__body">
+            <p class="pet__status pet__status--open">Available</p>
+            <h3 class="pet__name">Guddu</h3>
+            <p class="pet__meta">9 yrs · Small · Dog · 7 kg</p>
+            <p class="pet__note">A calm, house-trained senior. Looking for a patient, indoor-only retirement home.</p>
+          </div>
+        </li>
+        <li class="pet reveal" data-kind="cat" data-size="small" data-status="medical">
+          <a class="pet__media" href="#book" data-scroll>
+            <img src="assets/img/pet-mishti.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Mishti, a black-and-white cat in veterinary recovery">
+          </a>
+          <div class="pet__body">
+            <p class="pet__status pet__status--medical">In recovery</p>
+            <h3 class="pet__name">Mishti</h3>
+            <p class="pet__meta">3 yrs · Small · Cat · 3 kg</p>
+            <p class="pet__note">Under treatment for a viral infection. Sponsor her recovery and follow adoption news.</p>
+          </div>
+        </li>
+        <li class="pet reveal" data-kind="dog" data-size="large" data-status="adopted">
+          <a class="pet__media" href="#book" data-scroll>
+            <img src="assets/img/pet-coco.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Coco, a sleeping dog who has already been adopted">
+          </a>
+          <div class="pet__body">
+            <p class="pet__status pet__status--done">Adopted</p>
+            <h3 class="pet__name">Coco</h3>
+            <p class="pet__meta">5 yrs · Large · Dog · 22 kg</p>
+            <p class="pet__note">Adopted in June. Still visits us for boarding — her favourite kind of holiday.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ INTAKE PROCESS ============ -->
+  <section class="section intake" id="intake">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Intake</p>
+        <h2>What happens after you call.</h2>
       </div>
-      <div class="benefit reveal">
-        <span class="benefit__icon">🥘</span>
-        <h4>Fresh, not frozen</h4>
-        <p>Meals are cooked in small batches weekly — never mass-produced kibble.</p>
-      </div>
-      <div class="benefit reveal">
-        <span class="benefit__icon">🧑‍🤝‍🧑</span>
-        <h4>Verified, trained staff</h4>
-        <p>Every keeper and walker is background-checked and animal-handling certified.</p>
-      </div>
-      <div class="benefit reveal">
-        <span class="benefit__icon">☎️</span>
-        <h4>24/7 human support</h4>
-        <p>A real person answers — not a bot — whenever you need an update.</p>
-      </div>
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step__num">01</span>
+          <h3>Rescue</h3>
+          <p>We collect the animal within the hour, day or night. Free, anywhere in Pune.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__num">02</span>
+          <h3>Vet check</h3>
+          <p>Full examination within 24 hours. Vaccinations, deworming, microchip, sterilisation if needed.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__num">03</span>
+          <h3>Foster</h3>
+          <p>Two weeks minimum with a screened foster carer, so the animal learns it's safe to be a pet again.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__num">04</span>
+          <h3>Adoption</h3>
+          <p>Home visit, adoption agreement, and a follow-up call at one week, one month and six months.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
   <!-- ============ GALLERY ============ -->
-  <section class="gallery" id="gallery">
-    <div class="section-head reveal">
-      <p class="eyebrow">Life at Pashu</p>
-      <h2>A day in the pack.</h2>
-    </div>
-    <div class="gallery__grid">
-      <figure class="gallery__item reveal">
-        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80" alt="Dog running joyfully outdoors">
-        <figcaption>Morning zoomies, Suite Yard B</figcaption>
-      </figure>
-      <figure class="gallery__item reveal">
-        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80" alt="Vet examining a pet gently">
-        <figcaption>Weekly wellness check</figcaption>
-      </figure>
-      <figure class="gallery__item reveal">
-        <img src="https://images.unsplash.com/photo-1601979031925-424e53b6caaa?auto=format&fit=crop&w=800&q=80" alt="Cat lounging in a sunny window">
-        <figcaption>Afternoon sunbathing, Suite 9</figcaption>
-      </figure>
-      <figure class="gallery__item reveal">
-        <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&w=800&q=80" alt="Dog on a leash walk through a park">
-        <figcaption>Evening pack walk, riverside route</figcaption>
-      </figure>
-      <figure class="gallery__item reveal">
-        <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=800&q=80" alt="Puppy eating from a bowl">
-        <figcaption>Dinner service, 6:30pm</figcaption>
-      </figure>
-      <figure class="gallery__item reveal">
-        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80" alt="Dog sleeping peacefully on a soft bed">
-        <figcaption>Lights out, all suites quiet</figcaption>
-      </figure>
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Life at Pashu</p>
+        <h2>A day in the pack.</h2>
+      </div>
+      <div class="gallery__grid">
+        <figure class="gallery__item reveal">
+          <button type="button" class="gallery__btn" data-full="assets/img/gallery-1.jpg" data-caption="Morning zoomies, Suite Yard B">
+            <img src="assets/img/gallery-1.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Dog running joyfully outdoors in the morning">
+          </button>
+          <figcaption>Morning zoomies, Suite Yard B</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <button type="button" class="gallery__btn" data-full="assets/img/gallery-2.jpg" data-caption="Weekly wellness check">
+            <img src="assets/img/gallery-2.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Vet examining a pet gently during a wellness check">
+          </button>
+          <figcaption>Weekly wellness check</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <button type="button" class="gallery__btn" data-full="assets/img/gallery-3.jpg" data-caption="Afternoon sunbathing, Suite 9">
+            <img src="assets/img/gallery-3.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Cat lounging in a sunny window">
+          </button>
+          <figcaption>Afternoon sunbathing, Suite 9</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <button type="button" class="gallery__btn" data-full="assets/img/gallery-4.jpg" data-caption="Evening pack walk, riverside route">
+            <img src="assets/img/gallery-4.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Dog on a leash walk through a park">
+          </button>
+          <figcaption>Evening pack walk, riverside route</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <button type="button" class="gallery__btn" data-full="assets/img/gallery-5.jpg" data-caption="Dinner service, 6:30pm">
+            <img src="assets/img/gallery-5.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Puppy eating from a bowl at dinner">
+          </button>
+          <figcaption>Dinner service, 6:30pm</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <button type="button" class="gallery__btn" data-full="assets/img/gallery-6.jpg" data-caption="Lights out, all suites quiet">
+            <img src="assets/img/gallery-6.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Dog sleeping peacefully on a soft bed">
+          </button>
+          <figcaption>Lights out, all suites quiet</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
   <!-- ============ TESTIMONIALS ============ -->
-  <section class="testimonials">
-    <div class="testimonial-track reveal">
-      <p class="eyebrow">Pet parents say</p>
-      <div class="testimonial" id="testimonial">
-        <p class="testimonial__quote">“The live camera is what sold me, but the fact that the same
-          keeper stayed with Momo the whole week is why I'm never boarding anywhere else.”</p>
-        <p class="testimonial__author">— Aditi R., boarded a Labrador for 6 nights</p>
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="testimonial-track reveal">
+        <p class="eyebrow">Pet parents say</p>
+
+        <div class="testimonial" id="testimonial" role="group" aria-roledescription="carousel" aria-label="Customer testimonials">
+          <div class="testimonial__slide is-active" data-index="0">
+            <blockquote class="testimonial__quote">“The live camera is what sold me, but the fact that the same keeper stayed with Momo the whole week is why I'm never boarding anywhere else.”</blockquote>
+            <p class="testimonial__author">— Aditi R., boarded a Labrador for 6 nights</p>
+          </div>
+          <div class="testimonial__slide" data-index="1" hidden>
+            <blockquote class="testimonial__quote">“Switched to Pashu's meal plan after our vet flagged Simba's weight. Three months in and he's back to his sprinting-across-the-hallway self.”</blockquote>
+            <p class="testimonial__author">— Karan M., subscribed for a Persian cat</p>
+          </div>
+          <div class="testimonial__slide" data-index="2" hidden>
+            <blockquote class="testimonial__quote">“I get a photo and GPS map after every single walk. It sounds small until you've had a walker who 'forgot' to actually walk your dog before.”</blockquote>
+            <p class="testimonial__author">— Neha S., daily walks for a Beagle</p>
+          </div>
+        </div>
+
+        <div class="testimonial__controls">
+          <button class="testimonial__arrow" type="button" id="tPrev" aria-label="Previous testimonial">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="testimonial__dots" id="testimonialDots" role="tablist" aria-label="Choose testimonial"></div>
+          <button class="testimonial__arrow" type="button" id="tNext" aria-label="Next testimonial">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="testimonial__progress" aria-hidden="true"><i id="tProgress"></i></div>
       </div>
-      <div class="testimonial__dots" id="testimonialDots"></div>
+    </div>
+  </section>
+
+  <!-- ============ SUPPORT / DONATE ============ -->
+  <section class="support" id="support">
+    <div class="container">
+      <div class="section-head section-head--light reveal">
+        <p class="eyebrow eyebrow--light">Support the rescue</p>
+        <h2>Boarding pays for the rescue desk.</h2>
+        <p class="section-head__lede">
+          Every boarding stay funds vet work for animals who will never be our paying
+          guests. You can support it directly, and 100% of it goes to the animal.
+        </p>
+      </div>
+
+      <div class="support__grid">
+        <article class="tier reveal">
+          <p class="tier__amount">₹500</p>
+          <p class="tier__what">Two days of food and medicine for one animal in foster care.</p>
+          <a href="#book" class="btn btn--nav btn--full" data-scroll>Donate now</a>
+        </article>
+        <article class="tier tier--feature reveal">
+          <p class="tier__badge">Most common</p>
+          <p class="tier__amount">₹2,500</p>
+          <p class="tier__what">A full sterilisation, vaccination course and microchip for one rescued animal.</p>
+          <a href="#book" class="btn btn--primary btn--full" data-scroll>Donate now</a>
+        </article>
+        <article class="tier reveal">
+          <p class="tier__amount">₹10,000</p>
+          <p class="tier__what">Two weeks of emergency veterinary cover for an animal in our intake queue.</p>
+          <a href="#book" class="btn btn--nav btn--full" data-scroll>Donate now</a>
+        </article>
+      </div>
+
+      <div class="support__alt reveal">
+        <p><strong>Can't donate?</strong> Fostering and volunteering take no money at all — just time and patience. <a href="#book" data-scroll>Register your interest</a> and we'll match you with an animal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section faq" id="faq">
+    <div class="container container--narrow">
+      <div class="section-head reveal">
+        <p class="eyebrow">Questions</p>
+        <h2>Everything people ask first.</h2>
+      </div>
+
+      <div class="faq__list reveal">
+        <details class="faq__item">
+          <summary><span>Do you accept animals without full vaccination records?</span></summary>
+          <div class="faq__body"><p>We accept any animal, vaccinated or not — that's exactly why the rescue desk exists. Boarding guests without current records are housed separately for a 10-day observation period, at no extra charge. We vaccinate in-house if you authorise it.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary><span>How does the live camera work?</span></summary>
+          <div class="faq__body"><p>Every suite has its own feed, accessible from the app or a private link after check-in. Audio is disabled by default for privacy. Footage is retained for 30 days in case you need it for a vet consultation.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary><span>What does a meet-and-greet involve?</span></summary>
+          <div class="faq__body"><p>A 20-minute visit, free, before any booking. Your pet meets the specific keeper who'd be assigned. If the chemistry isn't right — for you or for them — we pair differently or refund. About 1 in 8 first matches need a second pairing.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary><span>How long does the adoption process take?</span></summary>
+          <div class="faq__body"><p>Typically 3 to 7 days from first contact. It includes an application, a phone interview, a home visit and a signed adoption agreement. We don't home anyone to a household with children under six without a supervised introduction first.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary><span>Can I surrender my pet without judgement?</span></summary>
+          <div class="faq__body"><p>Yes, and we mean that literally. Roughly a third of our intakes are voluntary surrenders. There's no fee, no interrogation and no proof of "good reason". We'll take the animal the same day and tell you honestly where it ends up — including if it's adopted by someone else.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary><span>Are you licensed, and who is your vet?</span></summary>
+          <div class="faq__body"><p>Pashu Premium Pet Care is registered under the Pune Municipal Corporation's pet boarding classification, licence <strong>PMC/PB/2019/04417</strong>. Our supervising veterinarian is Dr. Anjali Menon, MVSc (Surgery), licence <strong>VC-4821</strong>, on call 24/7.</p></div>
+        </details>
+      </div>
     </div>
   </section>
 
   <!-- ============ BOOKING ============ -->
   <section class="booking" id="book">
-    <div class="booking__inner">
-      <div class="booking__copy reveal">
-        <p class="eyebrow eyebrow--light">Reserve now</p>
-        <h2>Tell us about your pet.<br>We'll do the rest.</h2>
-        <p class="booking__note">This is a request form — our team confirms availability
-          and follows up within a few hours. No payment is taken here.</p>
-      </div>
-      <form class="booking__form reveal" id="bookingForm">
-        <div class="field-row">
-          <label class="field">
-            <span>Pet's name</span>
-            <input type="text" name="petName" placeholder="e.g. Bruno" required>
-          </label>
-          <label class="field">
-            <span>Species</span>
-            <select name="species" required>
-              <option value="">Select</option>
-              <option>Dog</option>
-              <option>Cat</option>
-              <option>Other</option>
-            </select>
-          </label>
+    <div class="container">
+      <div class="booking__inner">
+        <div class="booking__copy reveal">
+          <p class="eyebrow eyebrow--light">Reserve now</p>
+          <h2>Tell us about your pet.<br>We'll do the rest.</h2>
+          <p class="booking__note">This is a request form — our team confirms availability
+            and follows up within a few hours. No payment is taken here.</p>
+
+          <ul class="booking__assurances">
+            <li>Reply within 3 hours, 7 days a week</li>
+            <li>Free meet-and-greet before any booking</li>
+            <li>No card details required to reserve</li>
+          </ul>
         </div>
 
-        <fieldset class="field field--service">
-          <legend>Service needed</legend>
-          <div class="service-picker">
-            <label><input type="radio" name="service" value="Boarding" checked><span>🏠 Boarding</span></label>
-            <label><input type="radio" name="service" value="Food"><span>🥘 Food plan</span></label>
-            <label><input type="radio" name="service" value="Walking"><span>🐾 Walking</span></label>
+        <form class="booking__form reveal" id="bookingForm" novalidate>
+          <div class="form-alert" id="formAlert" role="alert" hidden>
+            <p><strong>Please fix the following:</strong></p>
+            <ul id="formAlertList"></ul>
           </div>
-        </fieldset>
 
-        <div class="field-row">
+          <div class="field-row">
+            <label class="field">
+              <span>Pet's name</span>
+              <input type="text" name="petName" placeholder="e.g. Bruno" autocomplete="off" required aria-describedby="err-petName">
+              <em class="field__error" id="err-petName" role="alert"></em>
+            </label>
+            <label class="field">
+              <span>Species</span>
+              <select name="species" required aria-describedby="err-species">
+                <option value="">Select</option>
+                <option>Dog</option>
+                <option>Cat</option>
+                <option>Bird</option>
+                <option>Rabbit</option>
+                <option>Other</option>
+              </select>
+              <em class="field__error" id="err-species" role="alert"></em>
+            </label>
+          </div>
+
           <label class="field">
-            <span>Start date</span>
-            <input type="date" name="startDate" required>
+            <span>Breed &amp; age <i>(optional)</i></span>
+            <input type="text" name="breed" placeholder="e.g. Indian pariah, 3 years" autocomplete="off">
           </label>
+
+          <fieldset class="field field--service">
+            <legend>What do you need?</legend>
+            <div class="service-picker">
+              <label><input type="radio" name="service" value="Boarding" checked><span>🏠 Boarding</span></label>
+              <label><input type="radio" name="service" value="Food plan"><span>🥘 Food plan</span></label>
+              <label><input type="radio" name="service" value="Walking"><span>🐾 Walking</span></label>
+              <label><input type="radio" name="service" value="Rescue intake"><span>🚨 Rescue intake</span></label>
+            </div>
+            <em class="field__error" id="err-service" role="alert"></em>
+          </fieldset>
+
+          <!-- Conditional: boarding only -->
+          <div class="field-row field-row--cond" data-when-service="Boarding">
+            <label class="field">
+              <span>Start date</span>
+              <input type="date" name="startDate" id="startDate" required aria-describedby="err-startDate">
+              <em class="field__error" id="err-startDate" role="alert"></em>
+            </label>
+            <label class="field">
+              <span>Nights</span>
+              <input type="number" name="nights" min="1" max="90" placeholder="7" inputmode="numeric">
+            </label>
+          </div>
+
+          <!-- Conditional: rescue intake only -->
+          <div class="field-row field-row--cond" data-when-service="Rescue intake" hidden>
+            <label class="field">
+              <span>Animal's condition</span>
+              <select name="condition">
+                <option value="">Select</option>
+                <option>Injured or unwell</option>
+                <option>Malnourished</option>
+                <option>Uninjured stray</option>
+                <option>Owner surrender</option>
+                <option>Orphaned litter</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Your location in Pune</span>
+              <input type="text" name="location" placeholder="e.g. Kothrud" autocomplete="address-level2">
+            </label>
+          </div>
+
+          <div class="field-row">
+            <label class="field">
+              <span>Your phone</span>
+              <input type="tel" name="phone" placeholder="+91 " autocomplete="tel" inputmode="tel" required aria-describedby="err-phone">
+              <em class="field__error" id="err-phone" role="alert"></em>
+            </label>
+            <label class="field">
+              <span>Your name</span>
+              <input type="text" name="ownerName" placeholder="e.g. Aditi Rao" autocomplete="name" required aria-describedby="err-ownerName">
+              <em class="field__error" id="err-ownerName" role="alert"></em>
+            </label>
+          </div>
+
+          <label class="field field--check" data-when-service="Boarding">
+            <input type="checkbox" name="records">
+            <span>Vaccination records available</span>
+          </label>
+
           <label class="field">
-            <span>Your phone</span>
-            <input type="tel" name="phone" placeholder="+91 " required>
+            <span>Anything we should know?</span>
+            <textarea name="notes" rows="3" placeholder="Allergies, temperament, favourite toy..."></textarea>
           </label>
+
+          <!-- Honeypot: hidden from humans, catches naive bots -->
+          <div class="hp" aria-hidden="true">
+            <label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full" id="bookingSubmit">
+            <span class="btn__label">Send reservation request</span>
+            <span class="btn__spinner" aria-hidden="true"></span>
+          </button>
+
+          <p class="booking__status" id="bookingStatus" role="status" aria-live="polite"></p>
+          <p class="booking__privacy">We only use these details to arrange your pet's care. No marketing lists, no sharing. <a href="mailto:hello@pashupets.com">Ask us anything.</a></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / NAP ============ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Find us</p>
+        <h2>Come and see the suites.</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__card reveal">
+          <h3>Visit</h3>
+          <address>
+            Pashu Premium Pet Care<br>
+            Survey No. 14, Kanchan Road<br>
+            Kothrud, Pune 411038<br>
+            Maharashtra, India
+          </address>
+          <p class="contact__note">Free parking on site. Nearest landmark: the old post office.</p>
+          <p>
+            <a class="contact__link" href="https://maps.google.com/?q=Kothrud+Pune" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a>
+          </p>
         </div>
 
-        <label class="field">
-          <span>Anything we should know?</span>
-          <textarea name="notes" rows="3" placeholder="Allergies, temperament, favorite toy..."></textarea>
-        </label>
+        <div class="contact__card reveal">
+          <h3>Hours</h3>
+          <dl class="hours">
+            <div><dt>Monday – Friday</dt><dd><time datetime="08:00">08:00</time> – <time datetime="20:00">20:00</time></dd></div>
+            <div><dt>Saturday</dt><dd><time datetime="08:00">08:00</time> – <time datetime="20:00">20:00</time></dd></div>
+            <div><dt>Sunday</dt><dd><time datetime="09:00">09:00</time> – <time datetime="14:00">14:00</time></dd></div>
+            <div class="hours__always"><dt>Rescue desk</dt><dd>Open 24 hours, every day</dd></div>
+          </dl>
+        </div>
 
-        <button type="submit" class="btn btn--primary btn--full">Send reservation request</button>
-        <p class="booking__status" id="bookingStatus" role="status" aria-live="polite"></p>
-      </form>
+        <div class="contact__card reveal">
+          <h3>Reach us</h3>
+          <ul class="contact__list">
+            <li><span aria-hidden="true">☎️</span> <a href="tel:+911234567890">+91 12345 67890</a></li>
+            <li><span aria-hidden="true">✉️</span> <a href="mailto:hello@pashupets.com">hello@pashupets.com</a></li>
+            <li><span aria-hidden="true">💬</span> <a href="https://wa.me/911234567890" target="_blank" rel="noopener noreferrer">WhatsApp the rescue desk</a></li>
+          </ul>
+          <h4 class="contact__sub">Press &amp; partnerships</h4>
+          <p><a href="mailto:press@pashupets.com">press@pashupets.com</a></p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -299,35 +800,130 @@
 
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
-  <div class="footer__inner">
-    <div class="footer__brand">
-      <span class="nav__word">Pashu<em>.</em></span>
-      <p>Premium pet care — boarding, food and walking, one animal at a time.</p>
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="nav__word">Pashu<em>.</em></span>
+        <p>Premium pet care — boarding, food and walking, one animal at a time. Plus a 24/7 rescue and adoption desk.</p>
+        <p class="footer__licence">Licence PMC/PB/2019/04417 · Vet VC-4821</p>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__h">Services</h2>
+        <a href="#food" data-scroll>Pet food</a>
+        <a href="#boarding" data-scroll>Boarding</a>
+        <a href="#walking" data-scroll>Walking</a>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__h">Rescue</h2>
+        <a href="#rescue" data-scroll>Rescue desk</a>
+        <a href="#adopt" data-scroll>Adoptable animals</a>
+        <a href="#intake" data-scroll>How intake works</a>
+        <a href="#support" data-scroll>Donate &amp; volunteer</a>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__h">Studio</h2>
+        <a href="#benefits" data-scroll>Why Pashu</a>
+        <a href="#gallery" data-scroll>Gallery</a>
+        <a href="#faq" data-scroll>FAQ</a>
+        <a href="#contact" data-scroll>Contact</a>
+      </div>
     </div>
-    <div class="footer__col">
-      <h5>Services</h5>
-      <a href="#food">Pet food</a>
-      <a href="#boarding">Boarding</a>
-      <a href="#walking">Walking</a>
+
+    <form class="newsletter" id="newsletterForm">
+      <div class="newsletter__copy">
+        <h2 class="footer__h">Adoption alerts</h2>
+        <p>One email a week when an animal is ready. No sales, ever.</p>
+      </div>
+      <div class="newsletter__form">
+        <label class="visually-hidden" for="newsletterEmail">Email address</label>
+        <input type="email" id="newsletterEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <button type="submit" class="btn btn--nav">Notify me</button>
+      </div>
+      <p class="newsletter__status" id="newsletterStatus" role="status" aria-live="polite"></p>
+    </form>
+
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> Pashu Premium Pet Care</span>
+      <span>Made with 🐾 for every good boy and good girl</span>
     </div>
-    <div class="footer__col">
-      <h5>Studio</h5>
-      <a href="#gallery">Gallery</a>
-      <a href="#benefits">Why Pashu</a>
-      <a href="#book">Book now</a>
-    </div>
-    <div class="footer__col">
-      <h5>Reach us</h5>
-      <a href="tel:+911234567890">+91 12345 67890</a>
-      <a href="mailto:hello@pashupets.com">hello@pashupets.com</a>
-    </div>
-  </div>
-  <div class="footer__bottom">
-    <span>© <span id="year"></span> Pashu Premium Pet Care</span>
-    <span>Made with 🐾 for every good boy and good girl</span>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<button class="to-top" id="toTop" type="button" aria-label="Back to top" hidden>
+  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- Lightbox -->
+<dialog class="lightbox" id="lightbox">
+  <button class="lightbox__close" type="button" aria-label="Close image viewer">
+    <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+  </button>
+  <button class="lightbox__arrow lightbox__arrow--prev" type="button" aria-label="Previous image">
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <figure class="lightbox__figure">
+    <img id="lightboxImg" alt="">
+    <figcaption id="lightboxCaption"></figcaption>
+  </figure>
+  <button class="lightbox__arrow lightbox__arrow--next" type="button" aria-label="Next image">
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</dialog>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PetStore",
+  "@id": "https://pashupets.com/#business",
+  "name": "Pashu Premium Pet Care",
+  "url": "https://pashupets.com/",
+  "telephone": "+91-12345-67890",
+  "email": "hello@pashupets.com",
+  "image": "assets/img/og-image.png",
+  "priceRange": "₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Survey No. 14, Kanchan Road, Kothrud",
+    "addressLocality": "Pune",
+    "addressRegion": "Maharashtra",
+    "postalCode": "411038",
+    "addressCountry": "IN"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 18.5074, "longitude": 73.8077 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "14:00" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "318" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pet Boarding" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fresh Pet Food Plans" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GPS-Tracked Dog Walking" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Animal Rescue and Adoption" } }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Do you accept animals without full vaccination records?", "acceptedAnswer": { "@type": "Answer", "text": "We accept any animal, vaccinated or not. Boarding guests without current records are housed separately for a 10-day observation period at no extra charge." } },
+    { "@type": "Question", "name": "How does the live camera work?", "acceptedAnswer": { "@type": "Answer", "text": "Every suite has its own feed, accessible from the app or a private link after check-in. Audio is disabled by default. Footage is retained for 30 days." } },
+    { "@type": "Question", "name": "What does a meet-and-greet involve?", "acceptedAnswer": { "@type": "Answer", "text": "A free 20-minute visit before any booking, where your pet meets the specific keeper who would be assigned." } },
+    { "@type": "Question", "name": "How long does the adoption process take?", "acceptedAnswer": { "@type": "Answer", "text": "Typically 3 to 7 days from first contact, including an application, phone interview, home visit and signed adoption agreement." } },
+    { "@type": "Question", "name": "Can I surrender my pet without judgement?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. There is no fee, no interrogation and no proof of good reason. We take the animal the same day." } }
+  ]
+}
+</script>
+
+<script src="js/main.js" type="module"></script>
 </body>
 </html>
